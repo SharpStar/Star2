@@ -196,3 +196,5 @@ FakesAssemblies/
 *.opt
 
 *.db
+
+project.lock.json

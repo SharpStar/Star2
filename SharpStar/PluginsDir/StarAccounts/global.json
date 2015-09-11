@@ -1,8 +1,8 @@
 ﻿{
-    "projects": [ "src", "test", "../../../StarLib/src" ],
-    "sdk": {
-        "version": "1.0.0-beta8-15599",
-        "runtime": "clr",
-        "architecture": "x86"
-    }
+  "projects": [ "src", "test", "../../../StarLib/src", "../StarCommands/src", "../../../Star.Common" ],
+  "sdk": {
+    "version": "1.0.0-beta8-15599",
+    "runtime": "clr",
+    "architecture": "x86"
+  }
 }
