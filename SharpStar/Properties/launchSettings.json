@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "exe": {},
+    "RunSharpStar": {
+      "commandName": "RunSharpStar",
+      "commandLineArgs": "--configuration=Release"
+    },
+    "SharpStar": {
+      "commandName": "SharpStar",
+      "sdkVersion": "dnx-clr-win-x86.1.0.0-beta8-15585"
+    }
+  }
+}

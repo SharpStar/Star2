@@ -1,0 +1,68 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace StarLib.Packets
+{
+    public enum PacketType : byte
+    {
+        ProtocolVersion = 0,
+        ServerDisconnect = 1,
+        ConnectionSuccess = 2,
+        ConnectionFailure = 3,
+        HandshakeChallenge = 4,
+        ChatReceived = 5,
+        UniverseTimeUpdate = 6,
+        CelestialResponse = 7,
+        PlayerWarpResult = 8,
+        ClientConnect = 9,
+        ClientDisconnect = 10,
+        HandshakeResponse = 11,
+        PlayerWarp = 12,
+        FlyShip = 13,
+        ChatSend = 14,
+        CelestialRequest = 15,
+        ClientContextUpdate = 16,
+        WorldStart = 17,
+        WorldStop = 18,
+        CelestialStructureUpdate = 19,
+        TileArrayUpdate = 20,
+        TileUpdate = 21,
+        TileLiquidUpdate = 22,
+        TileDamageUpdate = 23,
+        TileModificationFailure = 24,
+        GiveItem = 25,
+        SwapContainerResult = 26,
+        EnvironmentUpdate = 27,
+        EntityInteractResult = 28,
+        UpdateTileProtection = 29,
+        ModifyTileList = 30,
+        DamageTileGroup = 31,
+        CollectLiquid = 32,
+        RequestDrop = 33,
+        SpawnEntity = 34,
+        EntityInteract = 35,
+        ConnectWire = 36,
+        DisconnectAllWires = 37,
+        OpenContainer = 38,
+        CloseContainer = 39,
+        SwapContainer = 40,
+        ItemApplyContainer = 41,
+        StartCraftingContainer = 42,
+        StopCraftingContainer = 43,
+        BurnContainer = 44,
+        ClearContainer = 45,
+        WorldClientStateUpdate = 46,
+        EntityCreate = 47,
+        EntityUpdate = 48,
+        EntityDestroy = 49,
+        HitRequest = 50,
+        DamageRequest = 51,
+        DamageNotification = 52,
+        EntityMessage = 53,
+        EntityMessageResponse = 54,
+        UpdateWorldProperties = 55,
+        StepUpdate = 56
+    }
+}

@@ -1,0 +1,27 @@
+language: csharp
+solution: Star.sln
+mono:
+- latest
+addons:
+  apt:
+    packages:
+    - p7zip-full
+    - unzip
+    - curl
+script:
+- bash build.sh
+before_deploy:
+  - mkdir build
+  - "(cd output && 7z a ../build/Star2.zip *)"
+deploy:
+  provider: s3
+  skip_cleanup: true
+  access_key_id: AKIAIMIXI5BYSIGM6TJA
+  secret_access_key:
+    secure: JjkTxoEoNZAKPIm+vwfVljAeemmcYHB5TVl9i2IS12rvag4Of41d/vaDfSYnuPo5C9FcqaPW+LNlrMihIvQN4Tm5GuCLcQbzIW25fYn7VG/vyajBVu6G5ZHcGqLKOQbj2ViOcThg8MXOX10v3EbVbAa/21rV2L8OcW5CoN0tqgX66qjR1OpNBvZo/ZsTuYwwJOIkcYI0hJoixiTiIo2ND2HNLNWm9c9fW0jAW/AewPjzqJDvLS0PaNDEd0QRhWnLMGRtcCihZSoZgIZYBe4Rye/DsW9+HvOgF+XsFNeqeY9TVS8p4DIfMRv1c9AsUVIXErJDprp5zbr67Cj5ACp8Vyks6+hY2vyYnzbOWEkzNa6RiAKcQdzu8oGpF3CUcRQHnHkWEk05BJNqeiJjQkAYoOXTRUNWj/yrVAFwFc2LECLKhuTLM+10zkllT8gzxiyx7i/4+2UFJXmTdTk4khPvhMbUSEHG7NwKCjnWuTSLIAjmMNV3wwDAWd+xnn49mrzgBtLCXTZBM/cONHSEAEJdcDw7nr1NkA0MiEdus6gwbZvoWZjmaacYx/04nAafHsRrH5rugqQeE1BOdi6CpDA2M0oiZTwerfg/cSykhThYBEv4rx2kGAliS4K+lLPBWRU2KG/UW9orO8mDlK71urwDw/KalpIYjwLqimxZaoSQuG8=
+  bucket: starbound-star2
+  acl: public_read
+  local-dir: /home/travis/build/Mitch528/Star2/build
+  upload-dir: linux
+  on:
+    repo: SharpStar/Star2

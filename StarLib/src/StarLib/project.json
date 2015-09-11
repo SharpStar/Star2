@@ -1,0 +1,37 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "StarLib Class Library",
+    "authors": [ "Mitch528" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "EntityFramework.Commands": "7.0.0-beta8-15676",
+        "EntityFramework.Core": "7.0.0-beta8-15676",
+        "EntityFramework.Sqlite": "7.0.0-beta8-15676",
+        "Microsoft.Dnx.Runtime.Abstractions": "1.0.0-beta8-15599",
+        "Microsoft.Framework.DependencyInjection": "1.0.0-beta8-15560",
+        "Newtonsoft.Json": "7.0.1"
+    },
+
+    "commands": {
+        "ef": "EntityFramework.Commands"
+    },
+
+    "frameworks": {
+        "dnx451": { },
+        "dnxcore50": {
+            "dependencies": {
+                "System.Collections": "4.0.11-beta-23302",
+                "System.Linq": "4.0.1-beta-23302",
+                "System.Threading": "4.0.11-beta-23302",
+                "System.Net.Sockets": "4.1.0-beta-23302",
+                "System.Diagnostics.StackTrace": "4.0.1-beta-23302",
+                "System.Security.Cryptography.Algorithms": "4.0.0-beta-23302",
+                "System.Security.Cryptography.Primitives": "4.0.0-beta-23302",
+                "System.Security.Principal": "4.0.1-beta-23302"
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C87D1E9E-1E09-4435-A85C-38A9BC39B988}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3E15DFF-55BD-4951-9CD6-F9B64764A4FE}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StarAccounts", "src\StarAccounts\StarAccounts.xproj", "{019205E3-682C-41F6-A1ED-6DC7C7E8BC91}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StarLib", "..\..\..\StarLib\src\StarLib\StarLib.xproj", "{A3CB05C3-CFD4-4474-8CDA-8EFDF6F7FE2F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StarCommands", "..\StarCommands\src\StarCommands\StarCommands.xproj", "{AE686B89-D613-44A0-A881-294964C43E09}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Star.Common", "..\..\..\Star.Common\Star.Common.xproj", "{A66D205A-44FF-4D15-B9C1-B54D41B1379A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{019205E3-682C-41F6-A1ED-6DC7C7E8BC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019205E3-682C-41F6-A1ED-6DC7C7E8BC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019205E3-682C-41F6-A1ED-6DC7C7E8BC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019205E3-682C-41F6-A1ED-6DC7C7E8BC91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CB05C3-CFD4-4474-8CDA-8EFDF6F7FE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CB05C3-CFD4-4474-8CDA-8EFDF6F7FE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CB05C3-CFD4-4474-8CDA-8EFDF6F7FE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CB05C3-CFD4-4474-8CDA-8EFDF6F7FE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE686B89-D613-44A0-A881-294964C43E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE686B89-D613-44A0-A881-294964C43E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE686B89-D613-44A0-A881-294964C43E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE686B89-D613-44A0-A881-294964C43E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A66D205A-44FF-4D15-B9C1-B54D41B1379A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66D205A-44FF-4D15-B9C1-B54D41B1379A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66D205A-44FF-4D15-B9C1-B54D41B1379A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66D205A-44FF-4D15-B9C1-B54D41B1379A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{019205E3-682C-41F6-A1ED-6DC7C7E8BC91} = {C87D1E9E-1E09-4435-A85C-38A9BC39B988}
+	EndGlobalSection
+EndGlobal

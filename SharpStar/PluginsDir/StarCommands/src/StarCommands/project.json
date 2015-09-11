@@ -1,0 +1,28 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "StarCommands Class Library",
+    "authors": [ "Mitch528" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8-15560",
+        "Microsoft.Framework.Configuration.Json": "1.0.0-beta8-15565",
+        "Microsoft.Framework.Configuration.Binder": "1.0.0-beta8-15565",
+        "StarLib": "1.0.0"
+    },
+
+    "frameworks": {
+        "dnx451": {
+        },
+        "dnxcore50": {
+            "dependencies": {
+                "System.Console": "4.0.0-beta-23302",
+                "System.Collections": "4.0.11-beta-23302",
+                "System.Linq": "4.0.1-beta-23302",
+                "System.Threading": "4.0.11-beta-23302"
+            }
+        }
+    }
+}

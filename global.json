@@ -1,0 +1,8 @@
+{
+    "projects": [ "src", "test", "StarLib/src" ],
+    "sdk": {
+        "version": "1.0.0-beta8-15599",
+        "runtime": "clr",
+        "architecture": "x86"
+    }
+}
